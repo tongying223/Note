@@ -8,7 +8,7 @@
 命令 [-选项] [参数]
 ```
 
-例如
+例如. 
 
 ```shell
 ls -a /etc
@@ -374,6 +374,14 @@ ln /tmp/poem poem.hard
 （1）软链接文件也被删除
 
 （2）硬链接没有影响
+
+> 1. 软链接
+>
+> 软链接也是一个文件（有自己的文件名和inode），只是其文件内容为指向源文件的指针。
+>
+> 2. 硬链接
+>
+> 硬链接可以理解为同一个源文件的不同的文件名，因为他们的inode都是一样的。
 
 ### 5. 权限管理命令
 
@@ -3751,7 +3759,7 @@ source 配置文件
 ```
 /etc/profile				
 /etc/profile.d/*.sh
-~/bash_profile
+~/.bash_profile
 ~/.bashrc
 /etc/bashrc
 ```
