@@ -39,7 +39,7 @@ ls -a /etc
 
 - `ls -l` 长格式显示
 
-![image-20200319080339892](Linux基础.assets/image-20200319080339892.png)
+![image-20200319080339892](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172356.jpg)
 
 ```shell
 # 文件类型及权限 引用计数 所有者 所属组 文件大小 最后修改时间 文件名
@@ -109,7 +109,7 @@ cd ..
 
 例如：
 
-![image-20200319163342574](Linux基础.assets/image-20200319163342574.png)
+![image-20200319163342574](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172404.jpg)
 
 #### 2.5 `rmdir`
 
@@ -154,7 +154,7 @@ cp -p linux_cp.txt /tmp/learn/frame/
 cp -r ~/dev/ /tmp/myDev/
 ```
 
-![image-20200319171129164](Linux基础.assets/image-20200319171129164.png)
+![image-20200319171129164](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172410.jpg)
 
 #### 2.7 `mv`
 
@@ -242,7 +242,7 @@ touch -n list.txt
 
 例如：
 
-![image-20200320182032923](Linux基础.assets/image-20200320182032923.png)
+![image-20200320182032923](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172416.jpg)
 
 #### 3.4 `more`
 
@@ -355,7 +355,7 @@ ln /tmp/poem poem.hard
 
 （3）`poem -> /tmp/poem`，箭头指向原文件
 
-![image-20200320200517260](Linux基础.assets/image-20200320200517260.png)
+![image-20200320200517260](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172424.jpg)
 
 - **硬链接特征**
 
@@ -367,7 +367,7 @@ ln /tmp/poem poem.hard
 
 （4）不能针对目录使用
 
-![image-20200320202704403](Linux基础.assets/image-20200320202704403.png)
+![image-20200320202704403](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172430.jpg)
 
 **删除原文件后对链接文件有什么影响？**
 
@@ -480,7 +480,7 @@ chgrp mallgroup hello.java
 
 （1）显示新建文件的缺省权限
 
-![image-20200321150930430](Linux基础.assets/image-20200321150930430.png)
+![image-20200321150930430](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172437.jpg)
 
 rwxrwxr-x = 775 = 777 - 002
 
@@ -576,7 +576,7 @@ find /etc -cmin -5
 
 - `inum` 根据i节点查找（可以用来判断文件是否有硬链接）
 
-![image-20200321190533707](Linux基础.assets/image-20200321190533707.png)
+![image-20200321190533707](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172444.jpg)
 
 （7）匹配多个条件
 
@@ -599,7 +599,7 @@ find /etc -size +163840 -a -size -204800 -a -amin -60
 find /etc -name inittab -exec ls -l {} \;
 ```
 
-![image-20200321192026624](Linux基础.assets/image-20200321192026624.png)
+![image-20200321192026624](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172450.jpg)
 
 
 
@@ -625,7 +625,7 @@ updatedb
 
 （2）有些目录不在文件资料库的收录范围，如/tmp
 
-![image-20200322181048116](Linux基础.assets/image-20200322181048116.png)
+![image-20200322181048116](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172457.jpg)
 
 #### 6.3 `which`
 
@@ -639,7 +639,7 @@ updatedb
 
 例如：
 
-![image-20200322184137572](Linux基础.assets/image-20200322184137572.png)
+![image-20200322184137572](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172502.jpg)
 
 
 
@@ -655,7 +655,7 @@ updatedb
 
 例如：
 
-![image-20200322184915585](Linux基础.assets/image-20200322184915585.png)
+![image-20200322184915585](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172507.jpg)
 
 #### 6.5 `grep`
 
@@ -681,7 +681,7 @@ grep mysql /root/install.log
 print("Hello World)
 ```
 
-![image-20200322191531719](Linux基础.assets/image-20200322191531719.png)
+![image-20200322191531719](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172512.jpg)
 
 ### 7. 帮助命令
 
@@ -718,11 +718,11 @@ man 5 passwd
 
 （2）`what’s 命令名称` 可以查看命令的简短介绍
 
-![image-20200322214708337](Linux基础.assets/image-20200322214708337.png)
+![image-20200322214708337](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172517.jpg)
 
 （3）`apropos 配置文件` 可以查看配置文件的简短介绍
 
-![image-20200322215453041](Linux基础.assets/image-20200322215453041.png)
+![image-20200322215453041](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172523.jpg)
 
 （4）`命令 --help` 可以列出命令的常见选项
 
@@ -801,7 +801,7 @@ passwd tom
 
 例如：
 
-![image-20200323103954207](Linux基础.assets/image-20200323103954207.png)
+![image-20200323103954207](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172531.jpg)
 
 #### 8.4 `w`
 
@@ -814,7 +814,7 @@ passwd tom
 
 例如：
 
-![image-20200323110138308](Linux基础.assets/image-20200323110138308.png)
+![image-20200323110138308](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172536.jpg)
 
 显示格式：
 
@@ -839,7 +839,7 @@ Linux连续运行时间查看：
 uptime
 ```
 
-![image-20200323111238452](Linux基础.assets/image-20200323111238452.png)
+![image-20200323111238452](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172638.jpg)
 
 
 
@@ -873,7 +873,7 @@ uptime
 
 例如：
 
-![image-20200323113030983](Linux基础.assets/image-20200323113030983.png)
+![image-20200323113030983](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172650.jpg)
 
 #### 9.3 `tar`
 
@@ -897,7 +897,7 @@ uptime
 tar -zcf java.tar.gz java
 ```
 
-![image-20200323121402365](Linux基础.assets/image-20200323121402365.png)
+![image-20200323121402365](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172714.jpg)
 
 tar命令解压缩语法：
 
@@ -1007,9 +1007,9 @@ tar -xjf java.tar.bz2
 
 例如：
 
-![image-20200323184447266](Linux基础.assets/image-20200323184447266.png)
+![image-20200323184447266](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172724.jpg)
 
-![image-20200323184508078](Linux基础.assets/image-20200323184508078.png)
+![image-20200323184508078](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172731.jpg)
 
 #### 10.2 `wall`
 
@@ -1024,9 +1024,9 @@ tar -xjf java.tar.bz2
 
 例如：
 
-![image-20200323185056072](Linux基础.assets/image-20200323185056072.png)
+![image-20200323185056072](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172736.jpg)
 
-![image-20200323185119757](Linux基础.assets/image-20200323185119757.png)
+![image-20200323185119757](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172740.jpg)
 
 所有在线用户都能收到信息，包括自己
 
@@ -1043,7 +1043,7 @@ tar -xjf java.tar.bz2
 
 例如：
 
-![image-20200323185636611](Linux基础.assets/image-20200323185636611.png)
+![image-20200323185636611](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172745.jpg)
 
 #### 10.4 `ifconfig`
 
@@ -1101,7 +1101,7 @@ mail
 
 例如：
 
-![image-20200323193725406](Linux基础.assets/image-20200323193725406.png)
+![image-20200323193725406](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172752.jpg)
 
 #### 10.7 `lastlog`
 
@@ -1116,9 +1116,9 @@ mail
 
 例如：
 
-![image-20200323194131049](Linux基础.assets/image-20200323194131049.png)
+![image-20200323194131049](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172801.jpg)
 
-![image-20200323194318752](Linux基础.assets/image-20200323194318752.png)
+![image-20200323194318752](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172806.jpg)
 
 #### 10.8 `traceroute`
 
@@ -1132,7 +1132,7 @@ mail
 
 例如：
 
-![image-20200324201453237](Linux基础.assets/image-20200324201453237.png)
+![image-20200324201453237](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172812.jpg)
 
 
 
@@ -1162,13 +1162,13 @@ netstat -an
 netstat -rn
 ```
 
-![image-20200324203359971](Linux基础.assets/image-20200324203359971.png)
+![image-20200324203359971](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172818.jpg)
 
-![image-20200324203453019](Linux基础.assets/image-20200324203453019.png)
+![image-20200324203453019](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172826.jpg)
 
 `netstat -an`比`netstat -tlun`可以多了解到已经建立的连接。
 
-![image-20200324203806862](Linux基础.assets/image-20200324203806862.png)
+![image-20200324203806862](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172831.jpg)
 
 
 
@@ -1293,7 +1293,7 @@ runlevel
 
 例如：
 
-![image-20200325161552547](Linux基础.assets/image-20200325161552547.png)
+![image-20200325161552547](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172842.jpg)
 
 #### 11.5 退出登录命令
 
@@ -1637,7 +1637,7 @@ gpgkey		数字证书的公钥文件保存位置，不用修改
 
 例如：
 
-![image-20200327131715717](Linux基础.assets/image-20200327131715717.png)
+![image-20200327131715717](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172851.jpg)
 
 
 
@@ -1877,7 +1877,7 @@ Webmin是一个基于Web的Linux系统管理界面，可以通过图形化的方
 
 2. `/etc/passwd`
 
-![image-20200328171230613](Linux基础.assets/image-20200328171230613.png)
+![image-20200328171230613](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172902.jpg)
 
 使用`man 5 passwd`命令可以查看passwd文档帮助信息。其格式如下
 
@@ -1913,7 +1913,7 @@ shell就是Linux的命令解释器。
 
 `etc/shadow`
 
-![image-20200328174914138](Linux基础.assets/image-20200328174914138.png)
+![image-20200328174914138](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172909.jpg)
 
 格式说明：
 
@@ -1952,7 +1952,7 @@ $ echo $(($(date --date="2020/03/24" +%s)/86400+1))
 
 1. 组信息文件`/etc/group`
 
-![image-20200328184704716](Linux基础.assets/image-20200328184704716.png)
+![image-20200328184704716](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172913.jpg)
 
 格式说明：
 
@@ -1965,7 +1965,7 @@ $ echo $(($(date --date="2020/03/24" +%s)/86400+1))
 
 2. 组密码文件`/etc/gshadow`
 
-![image-20200328185635125](Linux基础.assets/image-20200328185635125.png)
+![image-20200328185635125](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172919.jpg)
 
 格式说明：
 
@@ -1998,7 +1998,7 @@ $ echo $(($(date --date="2020/03/24" +%s)/86400+1))
 
 `/etc/skel`
 
-![image-20200328192139060](Linux基础.assets/image-20200328192139060.png)
+![image-20200328192139060](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172924.jpg)
 
 作用：新建用户的家目录下的文件和目录就来自于用户模版目录。
 
@@ -2035,7 +2035,7 @@ ll -d /home/tom/
 ll /var/spool/mail/tom
 ```
 
-![image-20200329014048651](Linux基础.assets/image-20200329014048651.png)
+![image-20200329014048651](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172929.jpg)
 
 3. 指定选项添加用户
 
@@ -2067,7 +2067,7 @@ GID_MAX 60000
 ENCRYPT_METHOD SHA512	:加密模式
 ```
 
-![image-20200329020010693](Linux基础.assets/image-20200329020010693.png)
+![image-20200329020010693](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172934.jpg)
 
 
 
@@ -2089,7 +2089,7 @@ passwd [选项] 用户名
 passwd -S tom
 ```
 
-![image-20200329021439136](Linux基础.assets/image-20200329021439136.png)
+![image-20200329021439136](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172939.jpg)
 
 3. 锁定用户和解锁用户
 
@@ -2100,7 +2100,7 @@ passwd -u tom		# 解锁
 
 查看`/etc/shadow`：
 
-![image-20200329021837887](Linux基础.assets/image-20200329021837887.png)
+![image-20200329021837887](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172944.jpg)
 
 其实锁定用户就是将用户密码前加!，让其失效。
 
@@ -2164,7 +2164,7 @@ rm -rf /home/用户名/
 id 用户名
 ```
 
-![image-20200329030432949](Linux基础.assets/image-20200329030432949.png)
+![image-20200329030432949](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172952.jpg)
 
 3. 切换用户身份
 
@@ -2254,11 +2254,11 @@ dumpe2fs -h /dev/vda1
 df -h
 ```
 
-![image-20200329183920632](Linux基础.assets/image-20200329183920632.png)
+![image-20200329183920632](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172957.jpg)
 
 查看指定分区ACL权限是否开启
 
-![image-20200329115150619](Linux基础.assets/image-20200329115150619.png)
+![image-20200329115150619](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173002.jpg)
 
 现在的Linux默认分区基本都已经开启了acl权限。
 
@@ -2275,7 +2275,7 @@ mount -o remount,acl /
 vim /etc/fstab
 ```
 
-![image-20200329115704815](Linux基础.assets/image-20200329115704815.png)
+![image-20200329115704815](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173014.jpg)
 
 ```
 # 重新挂载文件系统或重启系统，使修改生效
@@ -2321,7 +2321,7 @@ chmod 770 /home/project/
 setfacl -m u:tom:rx /home/project/
 ```
 
-![image-20200329180227688](Linux基础.assets/image-20200329180227688.png)
+![image-20200329180227688](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173020.jpg)
 
 4. 给用户组设定ACL权限
 
@@ -2336,13 +2336,13 @@ groupadd testgrp2
 setfacl -m g:testgrp2:rwx /home/project/
 ```
 
-![image-20200329181057881](Linux基础.assets/image-20200329181057881.png)
+![image-20200329181057881](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173025.jpg)
 
 #### 1.3 最大有效权限与删除
 
 1. 最大有效权限mask
 
-![image-20200329182043331](Linux基础.assets/image-20200329182043331.png)
+![image-20200329182043331](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173031.jpg)
 
 mask是用来指定最大有效权限的，如果给用户赋予了ACL权限，是要与mask的权限**“相与”**才能得到用户的真正权限。
 
@@ -2352,7 +2352,7 @@ mask是用来指定最大有效权限的，如果给用户赋予了ACL权限，�
 setfacl -m m:rx 文件或目录
 ```
 
-![image-20200329182620856](Linux基础.assets/image-20200329182620856.png)
+![image-20200329182620856](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173036.jpg)
 
 **影响范围：所属组和ACL权限。**
 
@@ -2407,11 +2407,11 @@ setfacl -k 文件或目录
 
 passwd命令拥有SetUID权限，所以普通用户可以修改自己的密码
 
-![image-20200329194307427](Linux基础.assets/image-20200329194307427.png)
+![image-20200329194307427](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173043.jpg)
 
 cat命令没有SetUID权限，所以普通用户不能查看/etc/shadow文件内容
 
-![image-20200329194438981](Linux基础.assets/image-20200329194438981.png)
+![image-20200329194438981](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173047.jpg)
 
 2. 设定`SetUID`的方法
 
@@ -2423,11 +2423,11 @@ chmod u+s 文件名
 
 例如：
 
-![image-20200329195339763](Linux基础.assets/image-20200329195339763.png)
+![image-20200329195339763](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173052.jpg)
 
 注意：设定SUID权限的条件`二进制文件 && 普通用户具有可执行权限`，如果用户没有可执行权限而为其设定SUID的权限，系统将会报错，提示为将SUID的权限标识由s变为S。
 
-![image-20200329195858472](Linux基础.assets/image-20200329195858472.png)
+![image-20200329195858472](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173057.jpg)
 
 3. 取消SUID的方法
 
@@ -2463,7 +2463,7 @@ chmod u-s 文件名
 
 普通用户对mlocate.db并没有可读的权限，但是为什么可以使用`locate`命令呢？
 
-![image-20200329211821863](Linux基础.assets/image-20200329211821863.png)
+![image-20200329211821863](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173107.jpg)
 
 ```
 (1)/usr/bin/locate是可执行二进制程序，可以赋予SGID
@@ -2490,7 +2490,7 @@ touch /tmp/sgidtest/smile
 ls -l /tmp/sgidtest/smile
 ```
 
-![image-20200329213513773](Linux基础.assets/image-20200329213513773.png)
+![image-20200329213513773](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173113.jpg)
 
 3. 设定`SetGID`
 
@@ -2535,7 +2535,7 @@ chmod o-t 目录名
 
 例如：
 
-![image-20200331171921434](Linux基础.assets/image-20200331171921434.png)
+![image-20200331171921434](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173119.jpg)
 
 ### 3. 文件系统属性`chattr`权限
 
@@ -2565,7 +2565,7 @@ lsattr 选项 文件名
 
 例如：
 
-![image-20200331192804960](Linux基础.assets/image-20200331192804960.png)
+![image-20200331192804960](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173125.jpg)
 
 用途：chattr是为了防止包括root在内的用户对文件或目录进行误操作。
 
@@ -2617,9 +2617,9 @@ tom		ALL=(ALL)	/sbin/shoutdown -r now
 
 2. 分区表示方法
 
-![Untitled Diagram](Linux基础.assets/Untitled Diagram.svg)
+![Untitled Diagram](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172618.svg)
 
-![未命名绘图](Linux基础.assets/未命名绘图.svg)
+![未命名绘图](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172619.svg)
 
 以上主分区的设备文件名是固定的，即主分区是`/dev/sda1`~`/dev/sda2`，就算主分区只有一个，那其分区文件名为`/dev/sda1`，扩展分区为`/dev/sda2`，逻辑分区也要从`/dev/sda5`开始编号。
 
@@ -2654,7 +2654,7 @@ df [选项] [挂载点]
 
 例如：
 
-![image-20200401024231805](Linux基础.assets/image-20200401024231805.png)
+![image-20200401024231805](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173143.jpg)
 
 2. 统计目录或文件大小
 
@@ -2669,7 +2669,7 @@ du [选项] [目录或文件名]
 
 例如：
 
-![image-20200401024957636](Linux基础.assets/image-20200401024957636.png)
+![image-20200401024957636](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173151.jpg)
 
 `du`命令会扫描挂载点下的目录和文件，将其大小做一个总和，比较耗费资源，所以，不要随便在服务器上做这种高负载操作。
 
@@ -2699,7 +2699,7 @@ dumpe2fs 分区设备文件名
 
 例如：
 
-![image-20200401030939724](Linux基础.assets/image-20200401030939724.png)
+![image-20200401030939724](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173156.jpg)
 
 分区就是把大柜子打成一个个的小柜子，二格式化就是把小柜子打成一个个的隔断（数据块）。
 
@@ -2882,7 +2882,7 @@ mount /dev/sdb1 /disk1/
 
 1. `/etc/fstab`文件
 
-![image-20200401185802889](Linux基础.assets/image-20200401185802889.png)
+![image-20200401185802889](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173209.jpg)
 
 ```
 [1] 分区设备文件名或UUID(硬盘通用唯一识别码)
@@ -2904,7 +2904,7 @@ vim /etc/fastab
 mount -a
 ```
 
-![image-20200401191823189](Linux基础.assets/image-20200401191823189.png)
+![image-20200401191823189](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173215.jpg)
 
 这个文件跟系统启动有关，写时千万小心，不要出错。
 
@@ -2930,7 +2930,7 @@ vim /etc/fstab
 free
 ```
 
-![image-20200401192533967](Linux基础.assets/image-20200401192533967.png)
+![image-20200401192533967](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173221.jpg)
 
 cached（缓存）：是指把读取出来的数据保存在内存当中，当再次读取时，不用读取硬盘而直接从内存当中读取，加速了数据的读取过程。
 
@@ -2995,7 +2995,7 @@ vim /etc/fstab
 stat 文件名
 ````
 
-![image-20200413205437968](Linux基础.assets/image-20200413205437968.png)
+![image-20200413205437968](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173227.jpg)
 
 4. `file`
 
@@ -3004,7 +3004,7 @@ stat 文件名
 file 文件名
 ```
 
-![image-20200413205621033](Linux基础.assets/image-20200413205621033.png)
+![image-20200413205621033](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173233.jpg)
 
 
 
@@ -3016,7 +3016,7 @@ file 文件名
 
 Shell是一个命令行解释器，它为用户提供了一个向Linux内核发送请求以便运行程序的界面系统级程序，用户可以用Shell来启动、挂起、停止甚至编写一些程序。
 
-![未命名绘图](Linux基础.assets/未命名绘图-5831884.svg)
+![未命名绘图](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173240.svg)
 
 Shell还是一个功能相当强大的编程语言，易编写，易调试，灵活性较强。Shell是解释执行的脚本语言，在Shell中可以直接调用Linux系统命令。
 
@@ -3034,7 +3034,7 @@ Bash：Bash与sh兼容，现在使用的Linux就是使用Bash作为用户的基�
 /etc/shells
 ```
 
-![image-20200402205742629](Linux基础.assets/image-20200402205742629.png)
+![image-20200402205742629](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173246.jpg)
 
 ### 2. Shell脚本的执行方式
 
@@ -3072,7 +3072,7 @@ echo -e "\e[1; 31m abcd \e[0m"
 # 34m=蓝色，35m=洋红，36m=青色，37m=白色
 ```
 
-![image-20200402213911769](Linux基础.assets/image-20200402213911769.png)
+![image-20200402213911769](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173253.jpg)
 
 2. 第一个脚本
 
@@ -3124,7 +3124,7 @@ history [选项] [历史命令保存文件]
 
 历史命令默认会保存10000条，可以在环境变量配置文件/etc/profile中进行修改
 
-![image-20200404233353602](Linux基础.assets/image-20200404233353602.png)
+![image-20200404233353602](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173300.jpg)
 
 历史命令的调用：
 
@@ -3150,7 +3150,7 @@ alias 别名='原命令'
 alias
 ```
 
-![image-20200403195342984](Linux基础.assets/image-20200403195342984.png)
+![image-20200403195342984](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173306.jpg)
 
 命令执行顺序：
 
@@ -3168,7 +3168,7 @@ alias
 vim /home/tom/.bashrc
 ```
 
-![image-20200403195838112](Linux基础.assets/image-20200403195838112.png)
+![image-20200403195838112](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173310.jpg)
 
 2. Bash常用快捷键
 
@@ -3257,11 +3257,11 @@ wc其实是一个统计命令。
 
 例1：统计`sh/hello.sh`的行数，单词数和字节数
 
-![image-20200404150850263](Linux基础.assets/image-20200404150850263.png)
+![image-20200404150850263](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173317.jpg)
 
 例2: 统计键盘输入的数据中行数，单词数和字节数
 
-![image-20200404151111902](Linux基础.assets/image-20200404151111902.png)
+![image-20200404151111902](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173323.jpg)
 
 #### 3.4 多命令顺序执行与管道符
 
@@ -3287,7 +3287,7 @@ dd if=输入文件 of=输出文件 bs=字节数 count=个数
 date; dd if=/dev/zero of=/root/testfile  bs=1k count=100000;date;ls -lh /root/testfile
 ```
 
-![image-20200403203051415](Linux基础.assets/image-20200403203051415.png)
+![image-20200403203051415](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173327.jpg)
 
 源码安装时可以一步安装
 
@@ -3317,7 +3317,7 @@ ls -a /etc/ | more
 netstat -an | grep "ESTABLISHED"
 ```
 
-![image-20200403204638053](Linux基础.assets/image-20200403204638053.png)
+![image-20200403204638053](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173332.jpg)
 
 grep选项：
 
@@ -3329,7 +3329,7 @@ grep [选项] “搜索内容" 文件名
 	--color=auto	搜索处的关键字用颜色显示
 ```
 
-![image-20200403205641003](Linux基础.assets/image-20200403205641003.png)
+![image-20200403205641003](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173338.jpg)
 
 ### 4. Bash变量
 
@@ -3407,7 +3407,7 @@ unset str1
 
 例如：
 
-![image-20200403214746768](Linux基础.assets/image-20200403214746768.png)
+![image-20200403214746768](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173344.jpg)
 
 #### 4.2 环境变量
 
@@ -3425,7 +3425,7 @@ bash					# 进入子Shell
 set						# 查看所有的变量
 ```
 
-![image-20200403232651766](Linux基础.assets/image-20200403232651766.png)
+![image-20200403232651766](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173349.jpg)
 
 查看进程树：
 
@@ -3457,7 +3457,7 @@ unset 变量名
 
 PATH：系统查找命令的路径
 
-![image-20200403234213127](Linux基础.assets/image-20200403234213127.png)
+![image-20200403234213127](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173355.jpg)
 
 PATH变量叠加：
 
@@ -3492,7 +3492,7 @@ PS1='[\u@\h \t \w]\$ '	# [用户名@主机名 时间 完整目录]$
 PS1='[\u@\h \W]\$ '		# [用户名$主机名 简写目录]$ 
 ```
 
-![image-20200404000124352](Linux基础.assets/image-20200404000124352.png)
+![image-20200404000124352](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173400.jpg)
 
 查看`PS1`：
 
@@ -3522,7 +3522,7 @@ echo $2
 echo $3
 ```
 
-![image-20200404020108485](Linux基础.assets/image-20200404020108485.png)
+![image-20200404020108485](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173405.jpg)
 
 例2：接收两个参数，并计算它们的和
 
@@ -3532,7 +3532,7 @@ echo $3
 echo "$1 + $2 = $(($1 + $2))"
 ```
 
-![image-20200404020241201](Linux基础.assets/image-20200404020241201.png)
+![image-20200404020241201](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173411.jpg)
 
 例3：输出命令行中的参数个数及所有的参数
 
@@ -3543,7 +3543,7 @@ echo "All parameters: $*"
 echo "All parameters: $@"
 ```
 
-![image-20200404021309334](Linux基础.assets/image-20200404021309334.png)
+![image-20200404021309334](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173417.jpg)
 
 例4：`$*`和`$@`的区别
 
@@ -3563,7 +3563,7 @@ for y in "$@"
     done
 ```
 
-![image-20200404022652975](Linux基础.assets/image-20200404022652975.png)
+![image-20200404022652975](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173423.jpg)
 
 #### 4.4 预定义变量
 
@@ -3588,7 +3588,7 @@ find /home/tongying -name hello.sh &
 echo "The last Daemon process is $!"
 ```
 
-![image-20200404025156378](Linux基础.assets/image-20200404025156378.png)
+![image-20200404025156378](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173428.jpg)
 
 
 
@@ -3621,7 +3621,7 @@ echo -e "\n"
 echo "Your gender is $gender."
 ```
 
-![image-20200404032057825](Linux基础.assets/image-20200404032057825.png)
+![image-20200404032057825](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173434.jpg)
 
 ### 5. Bash运算符
 
@@ -3647,9 +3647,9 @@ bb=22
 declare -i cc=$aa+$bb
 ```
 
-![image-20200404212545435](Linux基础.assets/image-20200404212545435.png)
+![image-20200404212545435](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173440.jpg)
 
-![image-20200404213908591](Linux基础.assets/image-20200404213908591.png)
+![image-20200404213908591](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173445.jpg)
 
 2. expr或let数值运算工具
 
@@ -3661,7 +3661,7 @@ bb=22
 dd=$(expr $aa + $bb)
 ```
 
-![image-20200404213102014](Linux基础.assets/image-20200404213102014.png)
+![image-20200404213102014](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173452.jpg)
 
 3. "`$((运算式))`"或”`$[运算式]`”
 
@@ -3672,7 +3672,7 @@ ff=$(($aa+$bb))
 gg=$[$aa+$bb]
 ```
 
-![image-20200404213722086](Linux基础.assets/image-20200404213722086.png)
+![image-20200404213722086](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173457.jpg)
 
 
 
@@ -3721,7 +3721,7 @@ aa=11
 bb=${aa-new}
 ```
 
-![image-20200404220318212](Linux基础.assets/image-20200404220318212.png)
+![image-20200404220318212](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173507.jpg)
 
 例2：测试`x=${y+新值}`
 
@@ -3734,7 +3734,7 @@ cc=22
 dd=${cc+new}
 ```
 
-![image-20200404220851354](Linux基础.assets/image-20200404220851354.png)
+![image-20200404220851354](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173512.jpg)
 
 用`if`它不香吗。
 
@@ -3768,7 +3768,7 @@ source 配置文件
 
 #### 6.2 作用
 
-![env_order](Linux基础.assets/env_order.svg)
+![env_order](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173519.svg)
 
 1. /etc/profile的作用
 
@@ -3889,7 +3889,7 @@ grep "w.*d" regex_test.txt
 grep ".*" regex_test.txt
 ```
 
-![image-20200411164309939](Linux基础.assets/image-20200411164309939.png)
+![image-20200411164309939](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173528.jpg)
 
  `^`匹配行首，`$`匹配行尾
 
@@ -3950,19 +3950,19 @@ cut [选项] 文件名
 
 例如：
 
-![image-20200411183652558](Linux基础.assets/image-20200411183652558.png)
+![image-20200411183652558](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173534.jpg)
 
 ```shell
 cut -f 2,3 student.txt
 ```
 
-![image-20200411183918821](Linux基础.assets/image-20200411183918821.png)
+![image-20200411183918821](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173539.jpg)
 
 ```shell
 cut -d ":" -f 1,3 /etc/passwd
 ```
 
-![image-20200411184134748](Linux基础.assets/image-20200411184134748.png)
+![image-20200411184134748](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173544.jpg)
 
 提取所有的普通用户用于批量删除：
 
@@ -3970,7 +3970,7 @@ cut -d ":" -f 1,3 /etc/passwd
 cat /etc/passwd | grep /bin/bash | grep -v root | cut -d ":" -f 1
 ```
 
-![image-20200411184740401](Linux基础.assets/image-20200411184740401.png)
+![image-20200411184740401](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173550.jpg)
 
 `cut`的局限：
 
@@ -4017,7 +4017,7 @@ printf '%s %s %s' 1 2 3 4 5 6
 printf '%s %s %s\n' 1 2 3 4 5 6
 ```
 
-![image-20200411191505871](Linux基础.assets/image-20200411191505871.png)
+![image-20200411191505871](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173556.jpg)
 
 用printf输出文件内容：
 
@@ -4028,7 +4028,7 @@ printf '%s' $(cat student.txt)
 printf '%s\t %s\t %s\t %s\n' $(cat student.txt)
 ```
 
-![image-20200411192118372](Linux基础.assets/image-20200411192118372.png)
+![image-20200411192118372](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173602.jpg)
 
  在`awk`命令的输出中支持`print`和`printf`命令
 
@@ -4062,14 +4062,14 @@ x<=10
 
 例如：
 
-![image-20200411194010293](Linux基础.assets/image-20200411194010293.png) 
+![image-20200411194010293](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173608.jpg) 
 
 ```shell
 # 输出第2列和第6列，$0代表整个一行
 awk '{printf $2"t" $6"\n"}' student.txt
 ```
 
-![image-20200411194248930](Linux基础.assets/image-20200411194248930.png)
+![image-20200411194248930](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173613.jpg)
 
 `awk`命令虽然是提取列，但是是把数据一行一行读入再按格式进行处理。 
 
@@ -4080,7 +4080,7 @@ awk '{printf $2"t" $6"\n"}' student.txt
 df -h | awk '{print $1"\t" $3}'
 ```
 
-![image-20200411194942303](Linux基础.assets/image-20200411194942303.png)
+![image-20200411194942303](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173619.jpg)
 
  例如：提取某分区系统占用百分比
 
@@ -4088,7 +4088,7 @@ df -h | awk '{print $1"\t" $3}'
 df -h | grep vda1 | awk '{print $5}' | cut -d "%" -f 1
 ```
 
-![image-20200411201200223](Linux基础.assets/image-20200411201200223.png)
+![image-20200411201200223](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173624.jpg)
 
  
 
@@ -4100,7 +4100,7 @@ df -h | grep vda1 | awk '{print $5}' | cut -d "%" -f 1
 awk 'BEGIN{printf "This is a transcript\n"} {printf $2"\t" $5"\n"}' student.txt
 ```
 
-![image-20200411201918554](Linux基础.assets/image-20200411201918554.png)
+![image-20200411201918554](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173629.jpg)
 
 - **FS内置变量**
 
@@ -4112,11 +4112,11 @@ awk 'BEGIN{printf "This is a transcript\n"} {printf $2"\t" $5"\n"}' student.txt
 cat /etc/passwd | grep "/bin/bash" | awk 'BEGIN{FS=":"} {print $1 "\t" $3 "\n"}'
 ```
 
-![image-20200411202513297](Linux基础.assets/image-20200411202513297.png)
+![image-20200411202513297](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173634.jpg)
 
   如果不加BEGIN会怎么样呢？
 
-![image-20200411202850116](Linux基础.assets/image-20200411202850116.png)
+![image-20200411202850116](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173639.jpg)
 
 第一行没有被处理到，因为awk命令是先读入数据，再去匹配后面的条件，第一行读入时还没有指定分隔符，还是按照默认的制表符或者空格来分割。
 
@@ -4128,7 +4128,7 @@ cat /etc/passwd | grep "/bin/bash" | awk 'BEGIN{FS=":"} {print $1 "\t" $3 "\n"}'
 cat /etc/passwd | grep "/bin/bash" | awk 'BEGIN{FS=":"} END{print "~~Done~~"} {printf $1 "\t" $3 "\n"}'
 ```
 
-![image-20200411203645133](Linux基础.assets/image-20200411203645133.png)
+![image-20200411203645133](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173644.jpg)
 
 - **关系运算符**
 
@@ -4138,7 +4138,7 @@ cat /etc/passwd | grep "/bin/bash" | awk 'BEGIN{FS=":"} END{print "~~Done~~"} {p
  cat student.txt | grep -v 'Name' | awk '$6 >= 90 {printf $2 "\t" $6 "\n"}'
 ```
 
-![image-20200411204203545](Linux基础.assets/image-20200411204203545.png)
+![image-20200411204203545](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173649.jpg)
 
 ####  2.4 `sed`
 
@@ -4171,35 +4171,35 @@ s:	字串替换，用一个字符串替换另外一个字符串，格式为"行�
 
  例如：
 
-![image-20200412004818657](Linux基础.assets/image-20200412004818657.png)
+![image-20200412004818657](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173655.jpg)
 
  ```shell
 # 查看文件第二行
 sed -n '2p' student.txt
  ```
 
-![image-20200412005045230](Linux基础.assets/image-20200412005045230.png)
+![image-20200412005045230](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173700.jpg)
 
 ```shell
 # 也可以放在管道符之后
 df -h | sed -n '2p'
 ```
 
-![image-20200412005141542](Linux基础.assets/image-20200412005141542.png)
+![image-20200412005141542](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173705.jpg)
 
 ```shell
 # 删除第2到第3行，不修改原文件
  sed -n '2,3d' student.txt
 ```
 
-![image-20200412005458087](Linux基础.assets/image-20200412005458087.png)
+![image-20200412005458087](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173711.jpg)
 
 ```shell
 # 在第二行后追加hello
 sed '2a hello' student.txt
 ```
 
-![image-20200412005739503](Linux基础.assets/image-20200412005739503.png)
+![image-20200412005739503](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173716.jpg)
 
 ```shell
 # 在第二行前插入两行数据
@@ -4207,14 +4207,14 @@ sed '2i hello \
 world' student.txt
 ```
 
-![image-20200412010000267](Linux基础.assets/image-20200412010000267.png)
+![image-20200412010000267](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173721.jpg)
 
 ```shell
 # 数据替换
 sed '3c No such person' student.txt
 ```
 
-![image-20200412010348634](Linux基础.assets/image-20200412010348634.png)
+![image-20200412010348634](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173727.jpg)
 
 字串替换：`sed ‘s/旧字串/新字串/g’ 文件名`
 
@@ -4227,7 +4227,7 @@ sed -i '3s/84/89/g' student.txt
 sed -e 's/Coco/Lily/g; s/Doom/Nancy/g' student.txt
 ```
 
-![image-20200412011235704](Linux基础.assets/image-20200412011235704.png)
+![image-20200412011235704](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173734.jpg)
 
 ###   3. 字符处理命令
 
@@ -4266,13 +4266,13 @@ wc [选项] 文件名
 
 例如：
 
-![image-20200412015227545](Linux基础.assets/image-20200412015227545.png)
+![image-20200412015227545](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173741.jpg)
 
 ## 九、Linux服务管理
 
 ### 1. 服务分类
 
-![服务分类](Linux基础.assets/服务分类.svg)
+![服务分类](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505172622.svg)
 
 
 
@@ -4297,7 +4297,7 @@ chkconfig --list
 查看服务安装位置，一般是/usr/local/下
 ```
 
-![image-20200412021243343](Linux基础.assets/image-20200412021243343.png)
+![image-20200412021243343](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173747.jpg)
 
 「注：0～6代表系统运行级别——0关机，1单用户，2不完全多用户，3完全多用户，4未分配，5图形界面，6重启」
 
@@ -4345,7 +4345,7 @@ service 独立服务名 start|stop|status|restart
 service --status-all
 ```
 
-![image-20200412105814991](Linux基础.assets/image-20200412105814991.png) 
+![image-20200412105814991](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173754.jpg) 
 
 3. 独立服务的自启动
 
@@ -4378,7 +4378,7 @@ yum -y install telnet-server
 
 centOS7安装telnet后xinetd下面并没有找到：
 
-![image-20200412114614898](Linux基础.assets/image-20200412114614898.png)
+![image-20200412114614898](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173800.jpg)
 
 2. xinetd服务的启动
 
@@ -4475,7 +4475,7 @@ vim /etc/init.d/apache额
 
 不能与系统已经存在的服务的启动和关闭顺序相冲突，在/etc/rc.d/下面有rc0.d~rc6.d几个目录，数字代表系统运行级别，相应目录下就有服务的启动和关闭顺序。
 
-![image-20200412122150971](Linux基础.assets/image-20200412122150971.png)
+![image-20200412122150971](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173808.jpg)
 
 将应用加入到chkconfig可以识别：
 
@@ -4488,7 +4488,7 @@ chkconfig --add apache
 
 1. 服务的分类与管理
 
- ![服务管理总结](Linux基础.assets/服务管理总结.svg)
+ ![服务管理总结](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173815.svg)
 
 ## 十、Linux系统管理
 
@@ -4521,7 +4521,7 @@ ps aux
 ps -le
 ```
 
-![image-20200412153021669](Linux基础.assets/image-20200412153021669.png)
+![image-20200412153021669](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173823.jpg)
 
 ```
 [USER]:	该进程是由哪个用户产生的
@@ -4551,7 +4551,7 @@ top [选项]
 	q:		退出
 ```
 
-![image-20200412155542401](Linux基础.assets/image-20200412155542401.png)
+![image-20200412155542401](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173829.jpg)
 
 第一行信息为任务队列消息
 
@@ -4644,7 +4644,7 @@ kill pid
 
 例如：
 
-![image-20200412183926633](Linux基础.assets/image-20200412183926633.png)
+![image-20200412183926633](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173838.jpg)
 
 ```shell
 # 强制终止进程
@@ -4714,7 +4714,7 @@ jobs [-l]
 -l:	显示工作的PID
 ```
 
-![image-20200412193956558](Linux基础.assets/image-20200412193956558.png)
+![image-20200412193956558](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173845.jpg)
 
 「注」：+号代表最近一个放入后台的工作，也是工作恢复时默认恢复的工作，-代表倒数第二个放入后台的工作。
 
@@ -4752,7 +4752,7 @@ vmstat [刷新延时 刷新次数]
 vmstat 2 3
 ```
 
-![image-20200412205330312](Linux基础.assets/image-20200412205330312.png)
+![image-20200412205330312](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173853.jpg)
 
 #### 3.2 `dmesg`
 
@@ -4768,7 +4768,7 @@ dmesg
 dmesg | grep CPU
 ```
 
-![image-20200412205628159](Linux基础.assets/image-20200412205628159.png)
+![image-20200412205628159](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173858.jpg)
 
 
 
@@ -4797,7 +4797,7 @@ free [-b|-k|-m|-g]
 free -m
 ```
 
-![image-20200412210338483](Linux基础.assets/image-20200412210338483.png)
+![image-20200412210338483](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173905.jpg)
 
 上图中：total = used + free + buff/cache
 
@@ -4815,7 +4815,7 @@ cat /proc/cpuinfo
 
 例如：
 
-![image-20200412211117981](Linux基础.assets/image-20200412211117981.png)
+![image-20200412211117981](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173910.jpg)
 
 #### 3.5 `uptime`
 
@@ -4827,7 +4827,7 @@ uptime
 
 例如：
 
-![image-20200412211353633](Linux基础.assets/image-20200412211353633.png)
+![image-20200412211353633](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173915.jpg)
 
 
 
@@ -4845,7 +4845,7 @@ uname [选项]
 
 例如：
 
-![image-20200412211655552](Linux基础.assets/image-20200412211655552.png)
+![image-20200412211655552](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173920.jpg)
 
 #### 3.7 `file /bin/ls`
 
@@ -4857,7 +4857,7 @@ file /bin/ls
 
 例如：
 
-![image-20200412212036987](Linux基础.assets/image-20200412212036987.png)
+![image-20200412212036987](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173926.jpg)
 
 任何一个Linux外部命令都可以。
 
@@ -4876,7 +4876,7 @@ lsb_release -a
 
 例如：
 
-![image-20200412212424947](Linux基础.assets/image-20200412212424947.png)
+![image-20200412212424947](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173931.jpg)
 
 
 
@@ -4894,7 +4894,7 @@ lsof [选项]
 
 例如：
 
-![image-20200412213214726](Linux基础.assets/image-20200412213214726.png)
+![image-20200412213214726](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173937.jpg)
 
 ### 4. 系统定时任务
 
@@ -4907,7 +4907,7 @@ chkconfig crond on
 
 系统默认crond是启动以及自启动的，一般不需要手工管理。
 
-![image-20200412214006761](Linux基础.assets/image-20200412214006761.png)
+![image-20200412214006761](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173943.jpg)
 
 2. 用户的crontab设置
 
@@ -4968,7 +4968,7 @@ crontab [选项]
 0 5 1,10,15 * * /root/sh/autobak.sh
 ```
 
-![image-20200412222051334](Linux基础.assets/image-20200412222051334.png)
+![image-20200412222051334](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173951.jpg)
 
 ## 十一、日志管理
 
@@ -5000,7 +5000,7 @@ chkconfig --list | grep rsyslog
 systemctl list-unit-files | grep rsyslog
 ```
 
-![image-20200412232425588](Linux基础.assets/image-20200412232425588.png)
+![image-20200412232425588](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505173957.jpg)
 
 
 
@@ -5056,11 +5056,11 @@ users			# 查看当前已经登录的用户
 
 例如：/var/log/secure部分内容如下
 
-![image-20200413011039900](Linux基础.assets/image-20200413011039900.png)
+![image-20200413011039900](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174003.jpg)
 
 2. /etc/rsyslog.conf配置文件
 
-![image-20200413011351785](Linux基础.assets/image-20200413011351785.png)
+![image-20200413011351785](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174008.jpg)
 
 ```
 # 服务名称[连接符号]日志等级	日志记录位置
@@ -5142,7 +5142,7 @@ authpriv.*			/var/log/secure
 
 
 
-![image-20200413020051491](Linux基础.assets/image-20200413020051491.png)
+![image-20200413020051491](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174018.jpg)
 
 | 参数                    | 参数说明                                                     |
 | ----------------------- | ------------------------------------------------------------ |
@@ -5217,7 +5217,7 @@ logrotate -v /etc/logrotate.conf
 runlevel
 ```
 
-![image-20200413102203695](Linux基础.assets/image-20200413102203695.png)
+![image-20200413102203695](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174027.jpg)
 
 输出格式为：上一个运行级别 当前运行级别
 
@@ -5260,7 +5260,7 @@ graphical.target   <==>  5
 
 #### 1.2 系统启动过程
 
-![Linux启动过程-2](Linux基础.assets/Linux启动过程-2.svg)
+![Linux启动过程-2](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174032.svg)
 
 
 
@@ -5278,7 +5278,7 @@ Master Boot Record（主引导记录）。我们将包含MBR引导代码的的�
 结束标志——占用2个字节
 ```
 
-![img](Linux基础.assets/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5.gif)
+![img](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174039.gif)
 
 硬盘的主引导记录不属于任何一个操作系统，它先于操作系统被调用内存并发挥作用，然后将控制权交给主分区（活动分区）内的操作系统，并用主分区信息表来管理硬盘。
 
@@ -5308,7 +5308,7 @@ gunzip initramfs-3.10.0-514.el7.x86_64kdump.img.gz
 cpio -ivcdu < initramfs-3.10.0-514.el7.x86_64kdump.img
 ```
 
-![image-20200413114733308](Linux基础.assets/image-20200413114733308.png)
+![image-20200413114733308](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174045.jpg)
 
 上面的实验模拟了一个仿真根文件系统。
 
@@ -5389,11 +5389,11 @@ cpio -ivcdu < initramfs-3.10.0-514.el7.x86_64kdump.img
 
 1. grub中分区表示
 
-![image-20200413142200244](Linux基础.assets/image-20200413142200244.png)
+![image-20200413142200244](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174051.jpg)
 
 2. /boot/grub/grub.conf
 
-![image-20200413142730339](Linux基础.assets/image-20200413142730339.png)
+![image-20200413142730339](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505174058.jpg)
 
 ```
 vim /boot/grub/grub.conf

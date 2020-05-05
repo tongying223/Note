@@ -210,7 +210,7 @@ public @interface AutoConfigurationPackage {
 
 ​		**`@Import({AutoConfigurationImportSelector.class})`**：给容器导入组件。
 
-​				**`AutoConfigurationImportSelector`**：将所有需要导入的组件以全类名的方式返回。会给容器中导入非常多的自动配置类（xxxAutoConfigurarion），就是给这个容器导入这个场景需要的所有组件，并配置好这些组件。![image-20200308022350902](/Users/tongying/Note/SpringBoot/SpringBoot.assets/image-20200308022350902.png)
+​				**`AutoConfigurationImportSelector`**：将所有需要导入的组件以全类名的方式返回。会给容器中导入非常多的自动配置类（xxxAutoConfigurarion），就是给这个容器导入这个场景需要的所有组件，并配置好这些组件。![image-20200308022350902](https://tva1.sinaimg.cn/large/007S8ZIlgy1gehlc5xielj31bu0lijyd.jpg)
 
 有了自动配置类，免去了我们手动编写配置注入功能组件等的工作。Spring Boot在启动的时候从类路径下的META-INF/spring.factories中获取EnableAutoConfiguration制定的值，将这些值作为自动配置类导入到容器中，帮我们进行自动配置工作，
 
