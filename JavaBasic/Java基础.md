@@ -25,7 +25,7 @@
 
 1. 概念
 
-Java反射是在运行状态中，对于任意一个类，都能够知道这个类的所有的属性和方法，对于任意一个对戏那个，都能够调用它的所有属性和方法，这种动态获取信息以及动态调用对象方法的功能称为Java语言的反射机制。
+Java反射是在运行状态中，对于任意一个类，都能够知道这个类的所有的属性和方法，对于任意一个对象，都能够调用它的所有属性和方法，这种动态获取信息以及动态调用对象方法的功能称为Java语言的反射机制。
 
 2. 常用对象
 
@@ -105,7 +105,7 @@ Method类提供关于类或接口上单独某个方法的信息
 > 2. 获取指定的成员变量
 >
 > ```java
-> // 共有属性
+> // 公有属性
 > Field field = c.getField("name");
 > // 任何属性
 > Field field = c.getDeclardField("name");
@@ -130,7 +130,7 @@ Method类提供关于类或接口上单独某个方法的信息
 > 1. 获得所有方法
 >
 > ```java
-> // 获得所有的共有成员方法
+> // 获得所有的公有成员方法
 > getMethods()
 > // 获得所有声明的成员方法
 > getDeclaredMethod()
@@ -1147,11 +1147,11 @@ public class ThreadPoolDemo {
 
 ### 5.线程的状态
 
-- 新建（NEW）：创建后尚未启动的线程的状态
+- 新建（`NEW`）：创建后尚未启动的线程的状态
 
-- 运行（RUNNABLE）：包含Running和Ready
+- 运行（`RUNNABLE`）：包含Running和Ready
 
-- 无限期等待（WAITING）：不会被分配CPU执行时间，需要显式被唤醒
+- 无限期等待（`WAITING`）：不会被分配CPU执行时间，需要显式被唤醒
 
     ```
     没有设置Timeout参数的Object.wait()方法。
@@ -1159,7 +1159,7 @@ public class ThreadPoolDemo {
     LockSupport.park()方法
     ```
 
-- 限期等待（TIMED_WAITING）：在一定时间后会系统自动唤醒
+- 限期等待（`TIMED_WAITING`）：在一定时间后会系统自动唤醒
 
     ```
     Thread.sleep()方法
@@ -1169,9 +1169,9 @@ public class ThreadPoolDemo {
     LockSupport.parkUntil()方法
     ```
 
-- 阻塞（BLOCKED）：等待获取排它锁
+- 阻塞（`BLOCKED`）：等待获取排它锁
 
-- 结束（TERMINATED）：已终止线程的状态，线程已经结束执行
+- 结束（`TERMINATED`）：已终止线程的状态，线程已经结束执行
 
 
 
@@ -2659,7 +2659,7 @@ MappedByteBuffer
 
 ![JavaIO-第 5 页](https://gitee.com/tongying003/MapDapot/raw/master/img/20200505171945.svg)
 
-select，poll和epoll都是IO多路复用的机制。IO多路复用就通过一种机制，可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），它们能够通知程序进行响应的读写操作。select、poll和epoll本质上都是同步IO，因为它们都需要在读写事件就绪后自己负责读写，也就是说读写过程是阻塞的。
+select，poll和epoll都是IO多路复用的机制。IO多路复用就通过一种机制，可以监视多个描述符，一旦某个描述符就绪（一般是读就绪或者写就绪），它们能够通知程序进行相应的的读写操作。select、poll和epoll本质上都是同步IO，因为它们都需要在读写事件就绪后自己负责读写，也就是说读写过程是阻塞的。
 
 （1）支持一个进程所能打开的最大连接数
 

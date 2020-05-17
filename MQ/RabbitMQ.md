@@ -859,7 +859,7 @@ txCommit: 提交事务
 txRollback: 回滚事务
 ```
 
-创建生产设`Send.java`，采用事务机制管理消息发送
+创建生产生产者`Send.java`，采用事务机制管理消息发送
 
 ```java
 public class Send {
@@ -1034,7 +1034,7 @@ broker将在下面的情况中对消息进行confirm
 
 
 
-## Sprin集成RabbitMQ-client
+## Spring集成RabbitMQ-client
 
 引入依赖。
 
